@@ -9,7 +9,7 @@
             <div class="body">
               <h5><%= task.name %></h5>
               <p><%= task.done? ? 'Realizado' : 'Pendiente' %></p>
-              <a href="#" class="btn btn-primary">Go link :3</a>
+              <a href="#" class="btn btn-<%= task.done? ? 'success' : 'dark' %>">Go link :3</a>
             </div>
           </div>
         </div>
