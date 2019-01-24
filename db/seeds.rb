@@ -52,3 +52,11 @@ tasks = Task.create([
       done: false
     }
 ])
+
+9.times do |i|
+  user = User.new(email: "z@email#{i + 1}.com",
+           password: '123456',
+           password_confirmation: '123456' )
+  user.tasks << tasks
+  user.save
+end
